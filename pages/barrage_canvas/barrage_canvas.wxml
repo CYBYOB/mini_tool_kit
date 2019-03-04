@@ -1,0 +1,4 @@
+<!--pages/barrage_canvas/barrage_canvas.wxml-->
+<view class='page'>
+  <canvas canvas-id='my_canvas' style="width: 750px; height: 1320px;background-color: {{bg_color}}"></canvas>
+</view>
