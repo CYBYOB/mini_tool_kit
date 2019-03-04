@@ -1,0 +1,8 @@
+/* pages/analog_telephone/analog_telephone.wxss */
+.input_gap {
+  text-align: center;
+  border: 1rpx #eee solid;
+  margin: 30rpx 0;
+}
+
+/* mini/mini_tool_kit/analog_telephone/ */

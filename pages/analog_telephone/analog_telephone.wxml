@@ -1,0 +1,48 @@
+<!--pages/analog_telephone/analog_telephone.wxml-->
+<view class='page'>
+  <!-- 用户进行设置相关参数以及输入 -->
+  <view class='user_input'>
+    <!-- 来电类型 -->
+    <!-- <view class='input_gap type'>来电类型
+      <radio-group bindchange='f_type_change'>
+        <block wx:for='{{type_list}}'>
+          <radio value='{{item.value}}' checked='{{item.check}}'>{{item.title}}</radio>
+        </block>
+        {{type_index}}
+      </radio-group>
+    </view> -->
+
+    <!-- 来电显示 -->
+    <view class='input_gap caller'>
+      填写来电显示：
+      <input placeholder='在此更改显示内容' bindinput='f_caller_change'></input>
+      {{caller}}
+    </view>
+
+    <!-- 来电备注 -->
+    <view class='input_gap note'>
+      填写来电备注：
+      <input placeholder='在此更改备注内容' bindinput='f_note_change'></input>
+      {{note}}
+    </view>
+
+    <!-- 来电铃声 -->
+    <view class='input_gap music'>
+      选择来电铃声：
+      <picker range='{{music_list}}' value='{{music_index}}' bindchange='f_music_change'>{{music_list[music_index]}}</picker>
+      <!-- <audio id='my_audio' src='http://www.520cyb.cn/mini/mini_tool_kit/analog_telephone/mi.mp3' loop='true'></audio> -->
+    </view>
+  </view>
+
+  <view class='input_gap delay'>
+    延迟时间：
+    <slider min='0' max='100' value='0' show-value='true' bindchange='f_delay_change'></slider>
+    <view>{{delay}}分钟后开启模拟来电</view>
+  </view>
+  <!-- 预览效果 和 分享给好友 -->
+  <view class='preview_share'>
+    <button class='input_gap' type='primary' bindtap='f_preview'>预览效果</button>
+    <button class='input_gap' type='primary' open-type='share'>发送给好友</button>
+  </view>
+
+</view>
