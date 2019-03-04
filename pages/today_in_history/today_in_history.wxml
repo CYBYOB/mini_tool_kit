@@ -1,0 +1,25 @@
+<!--pages/today_in_history/today_in_history.wxml-->
+<view class='page'>
+  <!-- 用户输入 相对应的 月日（通过日期选择器实现），然后点击查询就可以获取到今天的历史事件了 -->
+  <view class='input_gap month_day'>
+    <picker mode='multiSelector' range='{{month_day}}' value='{{[month_index,day_index]}}' bindchange='f_month_day_change'>
+      当前选择：{{month_day[0][month_index]}}月 {{month_day[1][day_index]}}日
+    </picker>
+  </view>
+
+  <!-- 提交请求数据 -->
+  <button class='input_gap' type='primary' bindtap='f'>查询</button>
+
+  <!-- 查询结果 -->
+  <view class='result_list'>
+    查询结果如下：
+    <block wx:for='{{result_list}}'>
+      <view class='input_gap result_item'>
+        <view class='date'>时间：{{item.year}}年{{item.month}}月{{item.day}}日</view>
+        <view class='title'>标题：{{item.title}}</view>
+        <image src='{{item.pic}}'></image>
+        <view class='detail'>详情：{{item.des}}</view>
+      </view>
+    </block>
+  </view>
+</view>

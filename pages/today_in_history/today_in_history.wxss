@@ -1,0 +1,12 @@
+/* pages/today_in_history/today_in_history.wxss */
+.month_day {
+  padding: 30rpx 0;
+}
+
+.result_item {
+  width: 700rpx;
+  border-width: 5rpx;
+  border-radius: 30rpx;
+  box-shadow: 15rpx 15rpx 5rpx #eee;
+  margin: 70rpx auto;
+}
