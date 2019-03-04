@@ -1,0 +1,18 @@
+<!--pages/love/love.wxml-->
+<view class='page'>
+  <view class='search'>
+    <input placeholder='请输入女生的聊天关键词' maxlength='60' bindinput='f_input_text' bindconfirm='f_confirm'></input>
+    <button type='primary' bindtap='f_confirm'>搜索</button>
+  </view>
+
+  <!-- 搜索结果 -->
+  <view class='search_result'>
+    <block wx:for='{{love_list}}'>
+      <view class='love_item'>
+        <view class='woman'>{{item['woman']}}</view>
+        <view class='man'>{{item['man']}}</view>
+      </view>
+    </block>
+  </view>
+  
+</view>

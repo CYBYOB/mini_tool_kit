@@ -1,0 +1,15 @@
+/* pages/love/love.wxss */
+.search input {
+  height: 100rpx;
+}
+.search button {
+  margin-bottom: 20rpx;
+}
+
+.love_item {
+  border: 1rpx #eee solid;
+  margin: 30rpx 0;
+}
+.love_item .woman,.man {
+  margin: 30rpx 0;
+}
