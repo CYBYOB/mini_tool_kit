@@ -1,0 +1,17 @@
+<!--pages/phone_query/phone_query.wxml-->
+<view class='page'>
+  <view class='input_gap'>
+    <input value='{{phone}}' placeholder='请填写完整的手机号或其前7位' bindinput='f_phone_input' bindconfirm='f_phone_query'></input>
+  </view>
+
+  <!-- 点击下面按钮后，提交数据，对 api 发起请求 -->
+  <button type='primary' bindtap='f_phone_query'>查询其归属地</button>
+
+  <!-- 查询结果 -->
+  <view class='result'>
+    查询结果如下：
+    <view class='detail' hidden="{{flag==0? true: flase}}">手机号：{{phone}};隶属于{{result_list.province}}省{{result_list.city}}市{{result_list.company}}公司；区号为：{{result_list.areacode}};当地邮编号为：{{result_list.zip}}</view>
+  </view>
+
+  <!-- <view>cs结果: {{joke_name}}</view> -->
+</view>

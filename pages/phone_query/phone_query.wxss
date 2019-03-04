@@ -1,0 +1,5 @@
+/* pages/phone_query/phone_query.wxss */
+
+.result {
+  margin-top: 30rpx;
+}
