@@ -1,0 +1,9 @@
+/* pages/index/index.wxss */
+.page_item {
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  border: 1rpx #eee solid;
+  margin: 30rpx 0;
+  background-color: #ff9500;
+}

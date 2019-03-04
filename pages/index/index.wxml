@@ -1,0 +1,8 @@
+<!--pages/index/index.wxml-->
+<view class='page'>
+  <block wx:for='{{page_list}}'>
+    <view id='{{item.id}}' class='page_item' bindtap='f_navigate_to_page'>
+      {{item.title}}
+    </view>
+  </block>
+</view>
