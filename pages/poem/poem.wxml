@@ -1,0 +1,45 @@
+<!--pages/poem/poem.wxml-->
+<view class='page'>
+  <!-- 温馨提示 tips -->
+  <!-- <view class='tips'>
+    温馨提示：
+  </view> -->
+
+  <!-- 字数 -->
+  <radio-group bindchange='f_bindchange_1'>
+    <text>诗句的字数：</text>
+    <label wx:for='{{num_list}}'>
+      <radio value='{{item.value}}' checked='{{item.check}}'></radio>{{item.title}}
+    </label>
+    {{num}}
+  </radio-group>
+
+  <!-- 藏的位置，目前只支持 藏头和藏尾 -->
+  <radio-group bindchange='f_bindchange_2'>
+    <text>要藏的位置：</text>
+    <label wx:for='{{position_list}}'>
+      <radio value='{{item.value}}' checked='{{item.check}}'></radio>{{item.title}}
+    </label>
+    {{position}}
+  </radio-group>
+
+  <input class='input_text' placeholder='请输入您想说的话（仅限中文）' maxlength='60' focus='{{auto_focus}}' bindinput='f_input_text' bindconfirm='f_poem_create'></input> 
+  <button type='primary' bindtap='f_poem_create'>生成</button>
+
+  <!-- 生成的古诗 -->
+  <view class='poem'>
+    <view>生成的古诗如下：</view>
+    <text selectable='true'>{{poem}}</text>
+  </view>
+
+  <!-- 单个字对应的5条诗句 -->
+  <view>
+    <block wx:for='{{line_array_list}}'>
+      <view class='line_array_item'><text selectable='true'>第{{index}}个字相关的诗句:\n</text>
+        <block wx:for='{{item}}'>
+          <text class='content' selectable='true'>{{item[0]}}\n</text>
+        </block>
+      </view>
+    </block>
+  </view>
+</view>

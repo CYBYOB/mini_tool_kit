@@ -1,0 +1,29 @@
+/* pages/poem/poem.wxss */
+radio-group {
+  margin: 30rpx 0;
+}
+.input_text {
+  width: 750rpx;
+  height: 100rpx;
+  border: 1rpx #eee solid;
+}
+
+
+
+.poem {
+  text-align: center;
+  border: 1rpx #eee solid;
+  margin: 80rpx 0;
+}
+.poem text {
+  color: red;
+}
+
+.line_array_item {
+  text-align: center;
+  border: 1rpx #eee solid;
+  margin: 20rpx;
+}
+.line_array_item .content {
+  margin: 0 auto;
+}
