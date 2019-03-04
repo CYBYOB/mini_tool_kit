@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/webpage/webpage",
     "pages/index/index",
+    "pages/webpage/webpage",
     "pages/qq_test/qq_test",
     "pages/text_conversion/text_conversion",
     "pages/phone_query/phone_query",
