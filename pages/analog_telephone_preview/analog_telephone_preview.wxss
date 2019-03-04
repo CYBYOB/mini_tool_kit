@@ -1,0 +1,33 @@
+/* pages/analog_telephone_preview/analog_telephone_preview.wxss */
+.page {
+  text-align: center;
+  color: #fff;
+  background-color: #4f4f4f;
+}
+
+.caller_note .caller {
+  font-size: 70rpx;
+  padding: 30rpx 0;
+}
+.caller_note .note {
+  margin-bottom: 350rpx;
+}
+
+.notice_message image {
+  width: 100rpx;
+  height: 100rpx;
+}
+.notice_message .notice,.message {
+  display: inline-block;
+  padding: 35rpx 120rpx;
+} 
+
+.refuse_accept .refuse,.accept{
+  display: inline-block;
+  padding: 35rpx 20rpx;
+}
+
+.refuse_accept image{
+  width: 300rpx;
+  height: 300rpx;
+}

@@ -1,0 +1,36 @@
+<!--pages/analog_telephone_preview/analog_telephone_preview.wxml-->
+<view class='page'> 
+  <!-- 顶部的 来电显示 和 来电备注 -->
+  <view class='caller_note'>
+    <view class='caller'>{{caller}}</view>
+    <view class='note'>{{note}}</view>
+  </view>
+
+  <!-- 底部的 “提醒我”、“信息”、“拒绝”、“接受” -->
+  <view class='four_icon'>
+    <view class='notice_message'>
+      <view class='notice'>
+        <image src='../../images/analog_telephone_preview/notice.png'></image>
+        <view>提醒我</view>
+      </view>
+      <view class='message'>
+        <image src='../../images/analog_telephone_preview/message.png'></image>
+        <view>信息</view>
+      </view>
+    </view>
+
+    <view class='refuse_accept'>
+      <view class='refuse'>
+        <image src='../../images/analog_telephone_preview/refuse.png' bindtap='f_refuse'></image>
+        <view>拒绝</view>
+      </view>
+      <view class='accept'>
+        <image src='../../images/analog_telephone_preview/accept.png' bindtap='f_accept'></image>
+        <view>接受</view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 来电铃声 -->
+  <audio id='my_audio' src='{{music_src}}' loop='true'></audio>
+</view>
