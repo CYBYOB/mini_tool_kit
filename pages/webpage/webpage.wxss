@@ -1,0 +1,5 @@
+/* pages/webpage/webpage.wxss */
+.clip_url {
+  margin: 30rpx;
+  text-align: center
+}

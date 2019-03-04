@@ -1,0 +1,12 @@
+<!--pages/webpage/webpage.wxml-->
+<view class='page'>
+  <view>效果预览：（放视频或者gif动图)</view>
+  <button bindtap='f_image_ouload'>上传图片</button>
+  
+  <text selectable='true'>对应网址如下：{{result_url}}</text>
+  <button class='clip_url' bindtap='f_clip_url'>点击复制生成的网址</button>
+
+  <text>对应的二维码如下：</text>
+  <!-- url 转二维码 的 api   http://qr.liantu.com/api.php?&w=200&text=http://baidu.com -->
+  <image src='{{qr_url}}'></image>
+</view>
