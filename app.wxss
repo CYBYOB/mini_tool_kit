@@ -1,1 +1,11 @@
-
+/**app.wxss**/
+/* 组件之间设置间隔 */
+.page {
+  margin: 0 30rpx;
+}
+.input_gap {
+  text-align: center;
+  padding: 30rpx 0;
+  border: 3rpx #eee solid;
+  margin: 30rpx auto;
+}

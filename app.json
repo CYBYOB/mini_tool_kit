@@ -1,0 +1,25 @@
+{
+  "pages": [
+    "pages/webpage/webpage",
+    "pages/index/index",
+    "pages/qq_test/qq_test",
+    "pages/text_conversion/text_conversion",
+    "pages/phone_query/phone_query",
+    "pages/today_in_history/today_in_history",
+    "pages/analog_telephone/analog_telephone",
+    "pages/analog_telephone_preview/analog_telephone_preview",
+    "pages/barrage/barrage",
+    "pages/test/test",
+    "pages/barrage_canvas/barrage_canvas",
+    "pages/love/love",
+    "pages/poem/poem"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "顶部标题",
+    "navigationBarTextStyle": "black"
+  },
+  "debug": true
+}
