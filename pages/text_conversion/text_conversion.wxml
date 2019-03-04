@@ -1,0 +1,25 @@
+<!--pages/text_conversion/text_conversion.wxml-->
+<view class='page'>
+  <view class='user_input'>
+    <view class='user_radio'>
+      <radio-group bindchange='f_radio_change'>
+        <view>请选择您要转成的字体种类：</view>
+        <block wx:for='{{radio_list}}'>
+          <radio value='{{item.value}}' checked='{{item.check}}'>{{item.name}}</radio>
+        </block>
+      </radio-group>
+    </view>
+
+    <view class='user_text'>
+      <view>请输入要转的原始文字：</view>
+      <input placeholder='在此输入' bindinput='f_text_input' bindconfirm='f_comfirm'></input>
+    </view>
+
+    <button class='comfirm' type='primary' bindtap='f_comfirm'>提交</button>
+  </view>
+
+  <view class='result'>
+    <view>转换结果如下：</view>
+    <view class='result_text'>{{result}}</view>
+  </view>
+</view>

@@ -1,0 +1,12 @@
+/* pages/text_conversion/text_conversion.wxss */
+.page {
+  margin: 0 30rpx;
+  text-align: center;
+}
+.user_radio,.user_text,button {
+  margin: 30rpx 0;
+}
+.result .result_text {
+  margin: 30rpx 0;
+  border: 5rpx #eee solid;
+}
