@@ -1,0 +1,14 @@
+/* pages/qq_test/qq_test.wxss */
+.user_input,.result {
+  margin: 0 30rpx;
+}
+
+input,button,.analysis,.conclusion {
+  margin: 20rpx 0;
+}
+.analysis text {
+  color: red;
+}
+.conclusion text {
+  color: red;
+}

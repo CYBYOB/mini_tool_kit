@@ -1,0 +1,14 @@
+<!--pages/qq_test/qq_test.wxml-->
+<view class='page'>
+  <view class='user_input'>
+    <view>请输入您要测试的QQ号：</view>
+    <input placeholder='在此输入' bindinput='f_text_input' bindconfirm='f_comfirm'></input>
+    <button type='primary' bindtap='f_comfirm'>测试</button>
+  </view>
+
+  <!-- qq号码测试结果 -->
+  <view class='result'>
+    <view class='analysis'>分析如下：<text>{{result.analysis}}</text></view>
+    <view class='conclusion'>结论如下：<text>{{result.conclusion}}</text></view>
+  </view>
+</view>
