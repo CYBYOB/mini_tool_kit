@@ -1,0 +1,44 @@
+<!--pages/barrage/barrage.wxml-->
+<view class='page'>
+{{text}}\t{{font_size}}\t{{rolling_speed}}\t{{font_color}}\t{{bg_color}}\t{{rolling_direction.value}}\t{{rolling_direction}}
+  <view class='user_input'>
+    <!-- 弹幕内容的输入 -->
+    <input placeholder='请输入弹幕的内容' maxlength='60' bindinput='f_text_input' bindconfirm='f_text_confirm'></input>
+    
+    <!-- 其他参数的设置，字体大小、滚动速度、字体和背景颜色、滚动方向 -->
+    <view class='font_size'>
+      <text>设置字体大小</text>
+      <slider min='1' max='100' value='50' show-value='true' bindchange='f_font_size_change'></slider>
+    </view>
+
+    <view class='rolling_speed'>
+      <text>设置滚动速度</text>
+      <slider min='1' max='100' value='50' show-value='true' bindchange='f_rolling_speed_change'></slider>
+    </view>
+
+    <view class='font_color'>
+      <text>选择字体颜色</text>
+      <picker mode='selector' range='{{font_color_list}}' value='{{font_color_index}}' bindchange='f_font_color_change'>
+        当前所选：{{font_color_list[font_color_index]}}
+      </picker>
+    </view>
+
+    <view class='bg_color'>
+      <text>选择背景颜色</text>
+      <picker mode='selector' range='{{bg_color_list}}' value='{{bg_color_index}}' bindchange='f_bg_color_change'>
+        当前所选：{{bg_color_list[bg_color_index]}}
+      </picker>
+    </view>
+
+    <view class='rolling_direction_list'>
+      <radio-group bindchange='f_rolling_direction_change'>
+        <block wx:for='{{rolling_direction_list}}'>
+          <radio value='{{item.value}}' checked='{{item.check}}'>{{item.title}}</radio>
+        </block>
+      </radio-group>
+    </view>
+  </view>
+
+  
+  <button type='primary' bindtap='f_text_confirm'>点击生成弹幕</button>
+</view>
