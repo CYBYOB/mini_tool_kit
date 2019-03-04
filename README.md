@@ -1,6 +1,6 @@
 # mini_tool_kit
 ## 零、前言：
-1、收录各种 <strong>实用、好玩有趣</strong> 的 <strong>小功能以及API</strong> ，如果大家有好玩的 API 或者好的创意 <strong>欢迎与本人联系</strong> ~
+1、收录各种 <strong>实用、好玩有趣</strong> 的 <strong>小功能以及API</strong> ，如果大家有好玩的 API 或者好的创意 <strong>欢迎与本人联系</strong> ~ 当然为了追求 更多实用、有趣功能，所以界面做得比较 low ， <strong>非常欢迎 GitHuber 们提供 UI 支持</strong> ，非常感谢！
 
 2、只开放前端代码，涉及后端的代码因为顾及安全问题，可能需要更改到别的 数据库 ，再放出代码。此代码只可用于学习交流，不可用作他途，谢谢合作！ 如果发现代码有泄漏什么重要内容或者有啥建议或意见欢迎联系，本人<strong> QQ 1520112971 </strong> ，邮箱<strong>  <a href="mailto:1520112971@qq.com">1520112971@qq.com</a> </strong>,本人是<strong> 西安电子科技大学 计科院 软件工程专业 </strong>的 <strong>大三学生</strong>，目前 <strong>正在找实习工作~ </strong>
 
