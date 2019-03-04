@@ -1,0 +1,4 @@
+<!--pages/nimation/nimation.wxml-->
+<view class='page' bindtap='f'>
+  dk阿卡
+</view>
