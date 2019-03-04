@@ -8,16 +8,11 @@
 
 ## 一、效果如下(录制问题，似乎有些失真了。。。）：
 1、<strong><code>效果静态图：</code></strong>:
-1）、![img](https://github.com/CYBYOB/mini_tool_kit/blob/master/effect_of_screenshots/0.png)
+1)![img](https://github.com/CYBYOB/mini_tool_kit/blob/master/effect_of_screenshots/0.png)
+2)![img](https://github.com/CYBYOB/mini_tool_kit/blob/master/effect_of_screenshots/1.png)
+3)![img](https://github.com/CYBYOB/mini_tool_kit/blob/master/effect_of_screenshots/2.png)
+4)![img](https://github.com/CYBYOB/mini_tool_kit/blob/master/effect_of_screenshots/3.png)
 
-
-
-
-
-
-
-
-
-
-
-1、<strong><code>效果图1</code></strong>:
+2、<strong><code>效果动态图：</code></strong>:
+1)![img](https://github.com/CYBYOB/mini_tool_kit/blob/master/effect_of_screenshots/1.gif)
+2)![img](https://github.com/CYBYOB/mini_tool_kit/blob/master/effect_of_screenshots/2.gif)
